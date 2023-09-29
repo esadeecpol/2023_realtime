@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTime - Metodología</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <a class="header__title" href="index.html"><h1>RealTime by Esadeecpol</h1></a> 
+    </header>
+
+        <nav class="navegacion">
+            <a class="navegacion__link" href="index.html">Tracker</a>
+            <a class="navegacion__link" href="previsiones.html">Previsión anual · coming soon!</a>
+            <a class="navegacion__link  navegacion__link--active" href="metodologia.html">Metodología</a>
+        </nav>
+    </div> <!--.contenedor principal-->
+
+    <main class="main">
+        <div class="main__modelo">
+            <h2>Nuestro modelo:</h2>
+            <p>Estos <b>pronosticos</b> tienen como base la elaboración y estimacion de un modelo dinamico factorial con medio centendar de indicadores de la economia española e internacional, corregidos de estacionalidad y efecto calendario. Estos indicadores se reparten entre indicadores diarios, mensuales y trimestrales. Mientras los primeros se mensualizan mediante el uso de la media, los ultimos se incluyen directamente en el modelo ya que este está diseñado para asumir indicasdores en dos dimensiones temporales (mensuales y trimestrales) dando como resultado para todos los indicadores mensuales, tanto de datos pasados como proyectados al futuro. </p>
+
+            <p>El <b>indicador central</b> de nuestro analisis, el Producto Interior Bruto (PIB), que se introduce en el modelo en terminos trimestrales, puede ser previsto y analizado, como se explica mas adelante, en terminos mensuales. Los resultados trimestrales que se presentan aquí resultan de una media de los obtenido para cada mes que componen sus respectivos trimestres. El analisis de las sorpresas en indicadores sobre la estimacion del crecimiento del PIB (nowcasting) se logra mediante el analisis de la nueva informacion que de los indicadores van llegando e incorporandose al modelo estimado en la fecha de inicio para el analisis de cada trimestre</p>
+
+            <p>En cuanto a la <b>estimación</b>, y dada la cantidad potencialmente elevada de parametros existentes en modelos como este, el algoritmo aplicado para alcanzar la estimacion optima en un tiempo razonable es el algoritmo EM, como se detalla en Banbura y Modugno (2014). Como resultado, el modelo puede acomodar conjuntos de datos con cientos de variables observadas</p>
+
+            <p>Para los <b>indicadores</b>, el modelo maneja datos de frecuencia mixta a través de dos estrategias. La primera, si el modelo de factores basicos se especifica con una frecuencia mensual, la tasa de crecimiento trimestral de indicadores de menor frecuencia (trimestrales) se asigna al tercer mes de cada trimestre. Su mensualización se lleva a cabo mediante un promedio ponderado de las tasas de crecimiento mensuales no obseervadas. Dicha ponderación se logra mediante la construcción de una forma de espacio de estados para modelar explicitamente las tasas de crecimiento trimestrales en terminos de las tasas de crecimiento mensuales (Banbura et al, 2011)</p>
+
+            <p>Finalmente, para la <b>estimación de las probabilidades de contraccion</b>, las cifras corresponden a la probabilidad condicionada de dicha caida del PIB en los siguientes tres meses al del mes corriente de estimacion. La estimación de esta probabilidad se ha seguido mediante el uso de "Switching Models" la metodologia desarrollada en Hamilton (2005).</p>
+        </div>
+
+        <div class="main__modelo">
+            <h2>Referencias:</h2>
+            <p>Bańbura y Modugno (2014): “Maximum likelihood estimation of factor models on datasets with arbitrary pattern of missing data.” Journal of Applied Econometrics 29, no. 1 (2014): 133-160.</p>
+            <p>Bańbura et al. (2011): “Nowcasting” (Working paper)</p>
+            <p>Hamilton, J. D. (2005): Regime-Switching Models, Department of Economics, 0508, University of California, San Diego.</p>
+            <p>Mariano y Yasutomo (2010): “A coincident index, common factors, and monthly real GDP.” Oxford Bulletin of Economics and Statistics 72, no. 1 (2010): 27-46.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Créditos: Manuel Hidalgo (análisis y modelo) + Javier Martínez Santos (desarrollo y visualización) + Jorge Galindo (concepto) + Teresa Raigada (editorial)</p>
+    </footer>
+
+
+</body>
+</html>
