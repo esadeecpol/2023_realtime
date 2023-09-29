@@ -135,7 +135,7 @@ a{
   }
   
   /* Elemento separador */
-  .separador {
+.separador {
     width: 2rem;}
 
 .icon a:visited{
@@ -144,7 +144,9 @@ a{
 
 .icon__twitter:hover{
     color: #7097be;
+    transition: .3s;
 }
 .icon__github:hover{
     color: #6E5494;
+    transition: .3s;
 }
