@@ -38,7 +38,6 @@ p{
 }
 a{
     font-family: var(--fuenteprincipal);
-
     font-weight: 300;
     text-decoration: none;
 }
@@ -46,6 +45,8 @@ a{
 /** -- CONTENEDOR HEADER Y NAVEGACION --**/
 .contenedor{
     background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
     padding-top: 0.6rem;
     padding-bottom: 1rem;
 }
@@ -76,17 +77,17 @@ a{
     box-shadow: 5px 5px 15px gray;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .navegacion{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
         text-align: center;
-        padding: 0;
-        padding-left: 3rem;
-        padding-right: 3rem;
+
     }
     .navegacion__link{
+        font-size: 1.8rem;
         margin: .5rem;   
+        text-align: center;
+        max-width: 100%;
     }
 }
 
