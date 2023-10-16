@@ -116,12 +116,18 @@ a{
 }
 .main__contenedor--tracker{
     text-align: center;
-    height: 30rem;
+    height: auto;
 }
 .main__contenedor--prevision{
     height: 100%;
 }
 
+iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /** -- FOOTER --**/
 .footer{
     text-align: center;
