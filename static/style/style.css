@@ -1,10 +1,10 @@
-
 /** Variables globales **/
 :root {
     --fuenteprincipal: 'Roboto Slab', serif;
     --color1: #ACC7DC;
     --color1a: #acc7dc6a;
     --color2: #010C3D; 
+    --footercolor: #acc7dc41;
     --white: #fff;
     --black: #000;
   }
@@ -17,9 +17,9 @@
 *, *:before, *:after {
     box-sizing: inherit;
 }
+/*------------------------------------------------------------------------*/
 
-
-/** -- GLOBALES --**/
+/** GLOBALES **/
 
 body{
     background-color: #fbfcfdf6;
@@ -56,7 +56,7 @@ a{
     padding-top: 0.6rem;
     padding-bottom: 1rem;
 }
-.header__title{
+.header_title{
     text-decoration: none;
     color: black; 
 }
@@ -94,6 +94,8 @@ a{
         margin: .5rem;   
         text-align: center;
         max-width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
 
@@ -115,7 +117,7 @@ a{
     box-shadow: 3px 3px 15px gray;
 }
 .main__contenedor--tracker{
-    text-align: center;
+    text-align: left;
     height: auto;
 }
 .main__contenedor--prevision{
@@ -130,36 +132,21 @@ iframe {
 }
 /** -- FOOTER --**/
 .footer{
+    background-color: var(--footercolor);
     text-align: center;
     padding: 2rem;
 }
-
-
-
-.img1{
-    width: 40rem;
-    height: 30rem;
+.icons a{
+    padding: 1rem;
 }
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Elemento separador */
-.separador {
-    width: 2rem;}
-
-.icon a:visited{
+.icons a:visited{
     color: inherit;
 }
-
-.icon__twitter:hover{
+.icon_twitter:hover{
     color: #7097be;
-    transition: .3s;
+    transition: .2s;
 }
-.icon__github:hover{
+.icon_github:hover{
     color: #6E5494;
-    transition: .3s;
+    transition: .2s;
 }
