@@ -133,7 +133,7 @@ iframe {
 .footer{
     background-color: var(--footercolor);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 .icons a{
     padding: 1rem;
