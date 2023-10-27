@@ -87,7 +87,6 @@ a{
     .navegacion{
         display: flex;
         flex-direction: column;
-
     }
     .navegacion__link{
         font-size: 1.8rem;
@@ -110,7 +109,7 @@ a{
 .main__contenedor{
     background-color: var(--white);
     border-radius: .5rem;
-    width: 80%;
+    width: 90%;
     margin: 1.5rem;
     padding: 1rem;
     height: 100%;
