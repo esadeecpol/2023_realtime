@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Comprobar si el usuario ya ha visitado el sitio  
+    // Mostrar el cuadro de diálogo
+    var modal = document.getElementById('welcomeModal');
+    modal.style.display = 'block';
+  
     // Cerrar el cuadro de diálogo
     var closeBtn = document.querySelector('.close-btn');
     closeBtn.addEventListener('click', function() {
