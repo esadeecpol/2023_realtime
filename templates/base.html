@@ -12,10 +12,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('static', filename='style/normalize.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+        <script src="../static/js/app.js"></script>
+
     </head>
 
 <!--Body block code-->
     <body>
+
+
+        <div id="welcomeModal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Bienvenido a nuestro sitio web</h2>
+              <p>Gracias por visitarnos. ¡Esperamos que disfrutes tu experiencia aquí!</p>
+            </div>
+          </div>
+
         <!--Header block code-->
         <div class="contenedor">
             <header class="header">
