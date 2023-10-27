@@ -1,0 +1,152 @@
+/** Variables globales **/
+:root {
+    --fuenteprincipal: 'Roboto Slab', serif;
+    --color1: #ACC7DC;
+    --color1a: #acc7dc6a;
+    --color2: #010C3D; 
+    --footercolor: #acc7dc41;
+    --white: #fff;
+    --black: #000;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*------------------------------------------------------------------------*/
+
+/** GLOBALES **/
+
+body{
+    background-color: #fbfcfdf6;
+}
+h1{
+    font-family: var(--fuenteprincipal);
+    color: var(--color2);
+    font-weight: 600;
+    font-size: 3.8rem;
+    text-align: center;
+}
+h2{
+    font-family: var(--fuenteprincipal);
+    font-size: 2.5rem;
+}
+p{
+    font-family: var(--fuenteprincipal);
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: rgb(60, 59, 59);
+    line-height: 1.5;
+}
+a{
+    font-family: var(--fuenteprincipal);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/** -- CONTENEDOR HEADER Y NAVEGACION --**/
+.contenedor{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+}
+.header_title{
+    text-decoration: none;
+    color: black; 
+}
+
+.navegacion{
+    padding: 1rem;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+}
+.navegacion__link{
+    border-radius: .5rem;
+    background-color: #7097be;
+    color: aliceblue;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 1rem;   
+}
+.navegacion__link--active, 
+.navegacion__link:hover{
+    background-color: #004c99;
+    color: white;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 15px gray;
+
+}
+@media (max-width: 748px) {
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .navegacion__link{
+        font-size: 1.8rem;
+        margin: .5rem;   
+        text-align: center;
+        max-width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+
+/** -- CONTENEDORES PRINCIPALES DE LAS SECCIONES --**/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__contenedor{
+    background-color: var(--white);
+    border-radius: .5rem;
+    width: 80%;
+    margin: 1.5rem;
+    padding: 1rem;
+    height: 100%;
+    box-shadow: 3px 3px 15px gray;
+}
+.main__contenedor--tracker{
+    text-align: left;
+    height: auto;
+}
+.main__contenedor--prevision{
+    height: 100%;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/** -- FOOTER --**/
+.footer{
+    background-color: var(--footercolor);
+    text-align: center;
+    padding: 2rem;
+}
+.icons a{
+    padding: 1rem;
+}
+.icons a:visited{
+    color: inherit;
+}
+.icon_twitter:hover{
+    color: #7097be;
+    transition: .2s;
+}
+.icon_github:hover{
+    color: #6E5494;
+    transition: .2s;
+}
